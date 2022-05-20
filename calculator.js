@@ -184,9 +184,15 @@ function divisionStorage() {
     }
 }
 
-// clearing display and workspace 
-function clearDisplay() {
-    console.log('clear triggered')
+function clearDisplay(){
+    numberArray = []
+    value.textContent = '0'
+    console.log('clear display triggered')
+}
+
+// clearing calculator memory 
+function clearMemory() {
+    console.log('memory clear triggered')
     storageArray = [];
     numberArray = [];
     value.textContent = '0';

@@ -1,0 +1,116 @@
+html {
+    background-color: #EEEEEE;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1080px;
+    margin: auto;
+    gap: 70px;
+    margin-top: 200px;
+    
+}
+
+
+button {
+    border-radius: 6px;
+}
+
+@font-face {
+    font-family: digitalClock;
+    src: url(/assets/fonts/digital-7\ \(italic\).ttf);
+}
+
+p {
+    margin: 0px;
+}
+
+.calculatorBody {
+    background-color: #c7b175;
+    padding: 100px 15px 15px 15px;
+    border-radius: 10px;
+}
+
+.display {
+    text-align: right;
+    font-family: digitalClock;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.numpadBackground {
+    /*background-color: #c3ad71;*/
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+}
+
+.texasRow {
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: space-between;
+    width: 290px;
+    height: fit-content;
+    padding: 0px;
+}
+
+.topGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-template-rows: repeat(4, 65px);
+    gap: 10px;
+}
+
+.bottomGrid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 102px 65px 102px;
+    grid-template-rows: 65px;
+    gap: 10px;
+}
+
+.operatorButton {
+    background-color: #c7b175;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.numButton {
+    background-color: #f4faf6;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.equalButton {
+    background-color: #fa9511;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
+.fa-github {
+    color: var(--font);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }

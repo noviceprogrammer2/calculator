@@ -20,7 +20,7 @@ button {
 
 @font-face {
     font-family: digitalClock;
-    src: url(/assets/fonts/digital-7_italic-webfont.woff) format("woff");
+    src: url('/assets/fonts/digital-7_italic-webfont.woff') format("woff");
 }
 
 p {

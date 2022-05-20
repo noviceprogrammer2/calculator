@@ -13,20 +13,18 @@
 
 <body>
     <div class='calculatorBody'>
-        <div class="display">
-            <div>Display</div>
+        <div class="display" style="background-color: #20060f; color: #ff1e45; font-size: 35px;">
             <div id="displayValue" class="value">0</div>
         </div>
         <div class='numpadBackground'>
             <div class='texasRow'>
-                <p>Texas Instruments
-                <p>
-                <p>Datamath II
+                <img src="/assets/texas_beige-removebg-preview.png" alt="Texas" style="width:50px; padding: 0px; margin: 0px;" ;>
+                <p style="color: #c7b175;">Datamath II
                 <p>
             </div>
             <div class="topGrid">
-                <button onclick="clearDisplay()" class="operatorButton">C</button>
-                <button class="operatorButton">CE</button>
+                <button onclick="clearMemory()" class="operatorButton">C</button>
+                <button onclick="clearDisplay()" class="operatorButton">CE</button>
                 <button class="operatorButton">%</button>
                 <button class="operatorButton" onclick="divisionStorage()">÷</button>
                 <button id="7" class="numButton" value="7" onclick="input(this)">7</button>
@@ -54,6 +52,18 @@
 
 
     </div>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          noviceprogrammer2
+        </p>
+        <a href="https://github.com/noviceprogrammer2" target="_blank">
+          <img src="./assets/github.png" class="fab fa-github" style="width:25px">
+        </a>
+      </footer>
     </div>
 </body>
 

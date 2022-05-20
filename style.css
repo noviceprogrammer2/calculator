@@ -19,8 +19,8 @@ button {
 }
 
 @font-face {
-    font-family: digitalClock;
-    src: url('/assets/fonts/digital-7_italic-webfont.woff') format("woff");
+    font-family: 'digitalClock';
+    src: url('assets/fonts/digital-7 (italic).ttf');
 }
 
 p {
@@ -35,7 +35,7 @@ p {
 
 .display {
     text-align: right;
-    font-family: digitalClock;
+    font-family: 'digitalClock';
     padding: 20px;
     border-radius: 10px 10px 0px 0px;
 }

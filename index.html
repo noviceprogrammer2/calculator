@@ -13,58 +13,60 @@
 </head>
 
 <body>
-    <div class='calculatorBody'>
-        <div class="display" style="background-color: #20060f; color: #ff1e45; font-size: 35px;">
-            <div id="displayValue" class="value">0</div>
-        </div>
-        <div class='numpadBackground'>
-            <div class='texasRow'>
-                <img src="assets/texas_beige-removebg-preview.png" alt="Texas" style="width:50px; padding: 0px; margin: 0px;" ;>
-                <p style="color: #c7b175;">Datamath II
-                <p>
+    <div class='main'>
+        <div class='calculatorBody'>
+            <div class="display" style="background-color: #20060f; color: #ff1e45; font-size: 35px;">
+                <div id="displayValue" class="value">0</div>
             </div>
-            <div class="topGrid">
-                <button onclick="clearMemory()" class="operatorButton">C</button>
-                <button onclick="clearDisplay()" class="operatorButton">CE</button>
-                <button class="operatorButton">%</button>
-                <button class="operatorButton" onclick="divisionStorage()">÷</button>
-                <button id="7" class="numButton" value="7" onclick="input(this)">7</button>
-                <button id="8" class="numButton" value="8" onclick="input(this)">8</button>
-                <button id="9" class="numButton" value="9" onclick="input(this)">9</button>
-                <button class="operatorButton" onclick="multiplicationStorage()">x</button>
-                <button id="4" class="numButton" value="4" onclick="input(this)">4</button>
-                <button id="5" class="numButton" value="5" onclick="input(this)">5</button>
-                <button id="6" class="numButton" value="6" onclick="input(this)">6</button>
-                <button class="operatorButton" onclick="subtractionStorage()">-</button>
-                <button id="1" class="numButton" value="1" onclick="input(this)">1</button>
-                <button id="2" class="numButton" value="2" onclick="input(this)">2</button>
-                <button id="3" class="numButton" value="3" onclick="input(this)">3</button>
-                <button class="operatorButton" onclick="additionStorage()">+</button>
+            <div class='numpadBackground'>
+                <div class='texasRow'>
+                    <img src="assets/texas_beige-removebg-preview.png" alt="Texas"
+                        style="width:50px; padding: 0px; margin: 0px;" ;>
+                    <p style="color: #c7b175;">Datamath II
+                    <p>
+                </div>
+                <div class="topGrid">
+                    <button onclick="clearMemory()" class="operatorButton">C</button>
+                    <button onclick="clearDisplay()" class="operatorButton">CE</button>
+                    <button class="operatorButton">%</button>
+                    <button class="operatorButton" onclick="divisionStorage()">÷</button>
+                    <button id="7" class="numButton" value="7" onclick="input(this)">7</button>
+                    <button id="8" class="numButton" value="8" onclick="input(this)">8</button>
+                    <button id="9" class="numButton" value="9" onclick="input(this)">9</button>
+                    <button class="operatorButton" onclick="multiplicationStorage()">x</button>
+                    <button id="4" class="numButton" value="4" onclick="input(this)">4</button>
+                    <button id="5" class="numButton" value="5" onclick="input(this)">5</button>
+                    <button id="6" class="numButton" value="6" onclick="input(this)">6</button>
+                    <button class="operatorButton" onclick="subtractionStorage()">-</button>
+                    <button id="1" class="numButton" value="1" onclick="input(this)">1</button>
+                    <button id="2" class="numButton" value="2" onclick="input(this)">2</button>
+                    <button id="3" class="numButton" value="3" onclick="input(this)">3</button>
+                    <button class="operatorButton" onclick="additionStorage()">+</button>
+                </div>
+                <div class="bottomGrid">
+                    <button id="0" class="numButton" value="0" onclick="input(this)">0</button>
+                    <button id="." class="numButton" value="." onclick="input(this)">.</button>
+                    <button onclick="operate()" class="equalButton">=</button>
+                </div>
             </div>
-            <div class="bottomGrid">
-                <button id="0" class="numButton" value="0" onclick="input(this)">0</button>
-                <button id="." class="numButton" value="." onclick="input(this)">.</button>
-                <button onclick="operate()" class="equalButton">=</button>
+
+            <div class="operations">
             </div>
+
+
         </div>
-
-        <div class="operations">
-        </div>
-
-
-    </div>
-    <footer class="footer">
-        <p>
-          Copyright ©
-          <script>
-            document.write(new Date().getFullYear())
-          </script>
-          noviceprogrammer2
-        </p>
-        <a href="https://github.com/noviceprogrammer2" target="_blank">
-          <img src="./assets/github.png" class="fab fa-github" style="width:25px">
-        </a>
-      </footer>
+        <footer class="footer">
+            <p>
+                Copyright ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                noviceprogrammer2
+            </p>
+            <a href="https://github.com/noviceprogrammer2" target="_blank">
+                <img src="./assets/github.png" class="fab fa-github" style="width:25px">
+            </a>
+        </footer>
     </div>
 </body>
 

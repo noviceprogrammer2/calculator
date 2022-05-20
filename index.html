@@ -7,35 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator
     </title>
+    <link rel="stylesheet" href="style.css">
     <script src="/calculator.js" defer></script>
 </head>
 
 <body>
-    <div class="display">
-        <div>Display</div>
-        <div id = "displayValue" class = "value">0</div>
-    </div>
-    <button onclick= "clearDisplay()">Clear</button>
-    <div class="numbers">
-        <button id = "0" class = "numpad" value="0" onclick="input(this)">0</button>
-        <button id = "1" class = "numpad" value="1" onclick="input(this)">1</button>
-        <button id = "2" class = "numpad" value="2" onclick="input(this)">2</button>
-        <button id = "3" class = "numpad" value="3" onclick="input(this)">3</button>
-        <button id = "4" class = "numpad" value="4" onclick="input(this)">4</button>
-        <button id = "5" class = "numpad" value="5" onclick="input(this)">5</button>
-        <button id = "6" class = "numpad" value="6" onclick="input(this)">6</button>
-        <button id = "7" class = "numpad" value="7" onclick="input(this)">7</button>
-        <button id = "8" class = "numpad" value="8" onclick="input(this)">8</button>
-        <button id = "9" class = "numpad" value="9" onclick="input(this)">9</button>
-        <button id = "." class = "numpad" value = "." onclick="input(this)">.</button>
-    </div>
-    <div class="operations">
-        <button onclick = "additionStorage()">+</button>
-        <button onclick="subtractionStorage()">-</button>
-        <button onclick="multiplicationStorage()">(×)</button>
-        <button onclick="divisionStorage()">÷</button>
-        <button onclick = "operate()">=</button>
+    <div class='calculatorBody'>
+        <div class="display">
+            <div>Display</div>
+            <div id="displayValue" class="value">0</div>
+        </div>
+        <div class='numpadBackground'>
+            <div class='texasRow'>
+                <p>Texas Instruments
+                <p>
+                <p>Datamath II
+                <p>
+            </div>
+            <div class="topGrid">
+                <button onclick="clearDisplay()" class="operatorButton">C</button>
+                <button class="operatorButton">CE</button>
+                <button class="operatorButton">%</button>
+                <button class="operatorButton" onclick="divisionStorage()">÷</button>
+                <button id="7" class="numButton" value="7" onclick="input(this)">7</button>
+                <button id="8" class="numButton" value="8" onclick="input(this)">8</button>
+                <button id="9" class="numButton" value="9" onclick="input(this)">9</button>
+                <button class="operatorButton" onclick="multiplicationStorage()">x</button>
+                <button id="4" class="numButton" value="4" onclick="input(this)">4</button>
+                <button id="5" class="numButton" value="5" onclick="input(this)">5</button>
+                <button id="6" class="numButton" value="6" onclick="input(this)">6</button>
+                <button class="operatorButton" onclick="subtractionStorage()">-</button>
+                <button id="1" class="numButton" value="1" onclick="input(this)">1</button>
+                <button id="2" class="numButton" value="2" onclick="input(this)">2</button>
+                <button id="3" class="numButton" value="3" onclick="input(this)">3</button>
+                <button class="operatorButton" onclick="additionStorage()">+</button>
+            </div>
+            <div class="bottomGrid">
+                <button id="0" class="numButton" value="0" onclick="input(this)">0</button>
+                <button id="." class="numButton" value="." onclick="input(this)">.</button>
+                <button onclick="operate()" class="equalButton">=</button>
+            </div>
+        </div>
 
+        <div class="operations">
+        </div>
+
+
+    </div>
     </div>
 </body>
 
